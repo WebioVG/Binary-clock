@@ -1,5 +1,18 @@
 .activeOn {
-    background-color: #115ef4;
+    background-color: #115df4ad;
+    transform: scale(0.9) rotateY(180deg);
+}
+
+.dot {
+    transition: 500ms;
+}
+
+.hover-scale-up:hover {
+    transform: scale(1.05);
+}
+
+.transition-500 {
+    transition: 500ms;
 }
 
 #col_1_1_hours {
@@ -10,4 +23,25 @@
 #col_1_3_hours {
     border-bottom-right-radius: 1rem;
     border-top-right-radius: 1rem;
+}
+
+.glassmorphism {
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+@media (min-width: 640px) {
+    .hover-scale-up:hover {
+        transform: scale(1.1);
+    }
+}
+
+@media (min-width: 768px) {
+    .hover-scale-up:hover {
+        transform: scale(1.15);
+    }
 }

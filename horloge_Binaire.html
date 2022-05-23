@@ -16,66 +16,107 @@
 <body>
 
     <!-- CONTAINER - START -->
-    <div class="bg-slate-200 flex h-[100vh] items-center justify-center mx-auto w-[100vw]">
+    <div class="bg-slate-300 flex h-[100vh] items-center justify-center mx-auto w-[100vw]">
 
         <!-- DISPLAY - horloge - START -->
-        <div class="bg-slate-600 border-2 border-[#24282f] flex h-1/2 justify-between p-1 rounded-2xl shadow-2xl w-1/2">
+        <div class="glassmorphism flex h-[35vh] hover-scale-up justify-between p-1 rounded-2xl shadow-2xl transition-500 w-[90vw] sm:w-[65vw] md:h-[40vh] md:w-[75vw] lg:h-[50vh] lg:w-[60vw] xl:h-[60vh]">
 
             <!-- COLUMN 1 - hours - START -->
-            <div class="bg-slate-400 flex h-[100%] p-3 w-[33%]" id="col_1_1_hours">
+            <div class="border-2 border-[rgba(0,0,0,0.1)] flex h-[100%] p-3 w-[33%]" id="col_1_1_hours">
 
                 <!-- COLUMN 1.1 - tens - START -->
                 <div class="flex flex-col h-full justify-end w-1/2">
-                    <div class="activeOn bg-[#fff] border-2 border-gray-500 h-[50px] mx-auto my-1 rounded-[50%] w-[50px] hoursSelector"></div>
-                    <div class="activeOn bg-[#fff] border-2 border-gray-500 h-[50px] mx-auto my-1 rounded-[50%] w-[50px] hoursSelector"></div>
+                    <div
+                        class="bg-[#fff] border-2 border-gray-500 dot h-[30px] mx-auto my-1 rounded-[50%] w-[30px] md:h-[40px] md:w-[40px] lg:h-[50px] lg:w-[50px] xl:h-[60px] xl:w-[60px] hoursSelector">
+                    </div>
+                    <div
+                        class="bg-[#fff] border-2 border-gray-500 dot h-[30px] mx-auto my-1 rounded-[50%] w-[30px] md:h-[40px] md:w-[40px] lg:h-[50px] lg:w-[50px] xl:h-[60px] xl:w-[60px] hoursSelector">
+                    </div>
                 </div> <!-- COLUMN 1.1 - tens - END -->
-                
+
                 <!-- COLUMN 1.2 - ones - START -->
                 <div class="flex flex-col h-full justify-end w-1/2">
-                    <div class="activeOn bg-[#fff] border-2 border-gray-500 h-[50px] mx-auto my-1 rounded-[50%] w-[50px] hoursSelector"></div>
-                    <div class="activeOn bg-[#fff] border-2 border-gray-500 h-[50px] mx-auto my-1 rounded-[50%] w-[50px] hoursSelector"></div>
-                    <div class="activeOn bg-[#fff] border-2 border-gray-500 h-[50px] mx-auto my-1 rounded-[50%] w-[50px] hoursSelector"></div>
-                    <div class="activeOn bg-[#fff] border-2 border-gray-500 h-[50px] mx-auto my-1 rounded-[50%] w-[50px] hoursSelector"></div>
+                    <div
+                        class="bg-[#fff] border-2 border-gray-500 dot h-[30px] mx-auto my-1 rounded-[50%] w-[30px] md:h-[40px] md:w-[40px] lg:h-[50px] lg:w-[50px] xl:h-[60px] xl:w-[60px] hoursSelector">
+                    </div>
+                    <div
+                        class="bg-[#fff] border-2 border-gray-500 dot h-[30px] mx-auto my-1 rounded-[50%] w-[30px] md:h-[40px] md:w-[40px] lg:h-[50px] lg:w-[50px] xl:h-[60px] xl:w-[60px] hoursSelector">
+                    </div>
+                    <div
+                        class="bg-[#fff] border-2 border-gray-500 dot h-[30px] mx-auto my-1 rounded-[50%] w-[30px] md:h-[40px] md:w-[40px] lg:h-[50px] lg:w-[50px] xl:h-[60px] xl:w-[60px] hoursSelector">
+                    </div>
+                    <div
+                        class="bg-[#fff] border-2 border-gray-500 dot h-[30px] mx-auto my-1 rounded-[50%] w-[30px] md:h-[40px] md:w-[40px] lg:h-[50px] lg:w-[50px] xl:h-[60px] xl:w-[60px] hoursSelector">
+                    </div>
                 </div> <!-- COLUMN 1.2 - ones - END -->
             </div> <!-- COLUMN 1 - hours - END -->
-    
+
             <!-- COLUMN 2 - minutes - START -->
-            <div class="bg-slate-400 flex h-[100%] p-3 w-[33%]" id="col_1_2_hours">
+            <div class="border-2 border-[rgba(0,0,0,0.1)] flex h-[100%] p-3 w-[33%]" id="col_1_2_hours">
                 <!-- COLUMN 2.1 - tens - START -->
                 <div class="flex flex-col h-full justify-end w-1/2">
-                    <div class="activeOn bg-[#fff] border-2 border-gray-500 h-[50px] mx-auto my-1 rounded-[50%] w-[50px] minutesSelector"></div>
-                    <div class="activeOn bg-[#fff] border-2 border-gray-500 h-[50px] mx-auto my-1 rounded-[50%] w-[50px] minutesSelector"></div>
-                    <div class="activeOn bg-[#fff] border-2 border-gray-500 h-[50px] mx-auto my-1 rounded-[50%] w-[50px] minutesSelector"></div>
+                    <div
+                        class="bg-[#fff] border-2 border-gray-500 dot h-[30px] mx-auto my-1 rounded-[50%] w-[30px] md:h-[40px] md:w-[40px] lg:h-[50px] lg:w-[50px] xl:h-[60px] xl:w-[60px] minutesSelector">
+                    </div>
+                    <div
+                        class="bg-[#fff] border-2 border-gray-500 dot h-[30px] mx-auto my-1 rounded-[50%] w-[30px] md:h-[40px] md:w-[40px] lg:h-[50px] lg:w-[50px] xl:h-[60px] xl:w-[60px] minutesSelector">
+                    </div>
+                    <div
+                        class="bg-[#fff] border-2 border-gray-500 dot h-[30px] mx-auto my-1 rounded-[50%] w-[30px] md:h-[40px] md:w-[40px] lg:h-[50px] lg:w-[50px] xl:h-[60px] xl:w-[60px] minutesSelector">
+                    </div>
                 </div> <!-- COLUMN 2.1 - tens - END -->
-    
+
                 <!-- COLUMN 2.2 - ones - START -->
                 <div class="flex flex-col h-full justify-end w-1/2">
-                    <div class="activeOn bg-[#fff] border-2 border-gray-500 h-[50px] mx-auto my-1 rounded-[50%] w-[50px] minutesSelector"></div>
-                    <div class="activeOn bg-[#fff] border-2 border-gray-500 h-[50px] mx-auto my-1 rounded-[50%] w-[50px] minutesSelector"></div>
-                    <div class="activeOn bg-[#fff] border-2 border-gray-500 h-[50px] mx-auto my-1 rounded-[50%] w-[50px] minutesSelector"></div>
-                    <div class="activeOn bg-[#fff] border-2 border-gray-500 h-[50px] mx-auto my-1 rounded-[50%] w-[50px] minutesSelector"></div>
+                    <div
+                        class="bg-[#fff] border-2 border-gray-500 dot h-[30px] mx-auto my-1 rounded-[50%] w-[30px] md:h-[40px] md:w-[40px] lg:h-[50px] lg:w-[50px] xl:h-[60px] xl:w-[60px] minutesSelector">
+                    </div>
+                    <div
+                        class="bg-[#fff] border-2 border-gray-500 dot h-[30px] mx-auto my-1 rounded-[50%] w-[30px] md:h-[40px] md:w-[40px] lg:h-[50px] lg:w-[50px] xl:h-[60px] xl:w-[60px] minutesSelector">
+                    </div>
+                    <div
+                        class="bg-[#fff] border-2 border-gray-500 dot h-[30px] mx-auto my-1 rounded-[50%] w-[30px] md:h-[40px] md:w-[40px] lg:h-[50px] lg:w-[50px] xl:h-[60px] xl:w-[60px] minutesSelector">
+                    </div>
+                    <div
+                        class="bg-[#fff] border-2 border-gray-500 dot h-[30px] mx-auto my-1 rounded-[50%] w-[30px] md:h-[40px] md:w-[40px] lg:h-[50px] lg:w-[50px] xl:h-[60px] xl:w-[60px] minutesSelector">
+                    </div>
                 </div> <!-- COLUMN 2.2 - ones - END -->
             </div> <!-- COLUMN 2 - minutes - END -->
-    
+
             <!-- COLUMN 3 - seconds - START -->
-            <div class="bg-slate-400 flex h-[100%] p-3 w-[33%]" id="col_1_3_hours">
+            <div class="border-2 border-[rgba(0,0,0,0.1)] flex h-[100%] p-3 w-[33%]" id="col_1_3_hours">
                 <!-- COLUMN 3.1 - tens - START -->
                 <div class="flex flex-col h-full justify-end w-1/2">
-                    <div class="bg-[#fff] border-2 border-gray-500 h-[50px] mx-auto my-1 rounded-[50%] w-[50px] secondsSelector"></div>
-                    <div class="bg-[#fff] border-2 border-gray-500 h-[50px] mx-auto my-1 rounded-[50%] w-[50px] secondsSelector"></div>
-                    <div class="bg-[#fff] border-2 border-gray-500 h-[50px] mx-auto my-1 rounded-[50%] w-[50px] secondsSelector"></div>
+                    <div
+                        class="bg-[#fff] border-2 border-gray-500 dot h-[30px] mx-auto my-1 rounded-[50%] w-[30px] md:h-[40px] md:w-[40px] lg:h-[50px] lg:w-[50px] xl:h-[60px] xl:w-[60px] secondsSelector">
+                    </div>
+                    <div
+                        class="bg-[#fff] border-2 border-gray-500 dot h-[30px] mx-auto my-1 rounded-[50%] w-[30px] md:h-[40px] md:w-[40px] lg:h-[50px] lg:w-[50px] xl:h-[60px] xl:w-[60px] secondsSelector">
+                    </div>
+                    <div
+                        class="bg-[#fff] border-2 border-gray-500 dot h-[30px] mx-auto my-1 rounded-[50%] w-[30px] md:h-[40px] md:w-[40px] lg:h-[50px] lg:w-[50px] xl:h-[60px] xl:w-[60px] secondsSelector">
+                    </div>
                 </div> <!-- COLUMN 3.1 - tens - END -->
-    
+
                 <!-- COLUMN 3.2 - ones - START -->
                 <div class="flex flex-col h-full justify-end w-1/2">
-                    <div class="bg-[#fff] border-2 border-gray-500 h-[50px] mx-auto my-1 rounded-[50%] w-[50px] secondsSelector"></div>
-                    <div class="bg-[#fff] border-2 border-gray-500 h-[50px] mx-auto my-1 rounded-[50%] w-[50px] secondsSelector"></div>
-                    <div class="bg-[#fff] border-2 border-gray-500 h-[50px] mx-auto my-1 rounded-[50%] w-[50px] secondsSelector"></div>
-                    <div class="bg-[#fff] border-2 border-gray-500 h-[50px] mx-auto my-1 rounded-[50%] w-[50px] secondsSelector"></div>
+                    <div
+                        class="bg-[#fff] border-2 border-gray-500 dot h-[30px] mx-auto my-1 rounded-[50%] w-[30px] md:h-[40px] md:w-[40px] lg:h-[50px] lg:w-[50px] xl:h-[60px] xl:w-[60px] secondsSelector">
+                    </div>
+                    <div
+                        class="bg-[#fff] border-2 border-gray-500 dot h-[30px] mx-auto my-1 rounded-[50%] w-[30px] md:h-[40px] md:w-[40px] lg:h-[50px] lg:w-[50px] xl:h-[60px] xl:w-[60px] secondsSelector">
+                    </div>
+                    <div
+                        class="bg-[#fff] border-2 border-gray-500 dot h-[30px] mx-auto my-1 rounded-[50%] w-[30px] md:h-[40px] md:w-[40px] lg:h-[50px] lg:w-[50px] xl:h-[60px] xl:w-[60px] secondsSelector">
+                    </div>
+                    <div
+                        class="bg-[#fff] border-2 border-gray-500 dot h-[30px] mx-auto my-1 rounded-[50%] w-[30px] md:h-[40px] md:w-[40px] lg:h-[50px] lg:w-[50px] xl:h-[60px] xl:w-[60px] secondsSelector">
+                    </div>
                 </div> <!-- COLUMN 3.2 - ones - END -->
             </div> <!-- COLUMN 3 - seconds - END -->
         </div> <!-- DISPLAY - horloge - END -->
     </div> <!-- CONTAINER - END -->
+
 
     <script src="script.js"></script>
 </body>

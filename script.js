@@ -19,7 +19,6 @@ i = setInterval(function() {
     seconds = date.getSeconds();
     
     display(hours, minutes, seconds);
-    console.log(seconds);
     
 }, 1000);
 
