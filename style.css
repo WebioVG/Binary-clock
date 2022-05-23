@@ -1,0 +1,13 @@
+.activeOn {
+    background-color: #115ef4;
+}
+
+#col_1_1_hours {
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+#col_1_3_hours {
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
