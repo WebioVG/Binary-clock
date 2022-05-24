@@ -17,6 +17,7 @@ let time_s = document.getElementById('time_s');
 // Get hours, minutes and seconds dynamically
 i = setInterval(function() {
     date = new Date();
+
     hours = date.getHours();
     minutes = date.getMinutes();
     seconds = date.getSeconds();
@@ -29,47 +30,41 @@ i = setInterval(function() {
     
 }, 1000);
 
+// Function which displays the current time thanks to the class
 function display(hours, minutes, seconds) {   
-    let countH = -1, countM = -1, countS = -1;     
-
-    for (let h of hoursValues) {
-        countH++;
-        if (hours >= h && countH < hoursValues.length) {
-            dotsHours[countH].classList.add('activeOn');
-            dotsHours[countH].classList.remove('bg-[#fff]');
+    for (let h in hoursValues) {
+        if (hours >= hoursValues[h] && h < hoursValues.length) {
+            dotsHours[h].classList.add('activeOn');
+            dotsHours[h].classList.remove('bg-[#fff]');
             
-            hours -= h;
+            hours -= hoursValues[h];
         } else {
-            dotsHours[countH].classList.remove('activeOn');
-            dotsHours[countH].classList.add('bg-[#fff]');
+            dotsHours[h].classList.remove('activeOn');
+            dotsHours[h].classList.add('bg-[#fff]');
         }
     }
 
-    for (let m of minutesValues) {
-        countM++;
+    for (let m in minutesValues) {
+        if (minutes >= minutesValues[m] && m < minutesValues.length) {
+            dotsMinutes[m].classList.add('activeOn');
+            dotsMinutes[m].classList.remove('bg-[#fff]');
 
-        if (minutes >= m && countM < minutesValues.length) {
-            dotsMinutes[countM].classList.add('activeOn');
-            dotsMinutes[countM].classList.remove('bg-[#fff]');
-
-            minutes -= m;
+            minutes -= minutesValues[m];
         } else {
-            dotsMinutes[countM].classList.remove('activeOn');
-            dotsMinutes[countM].classList.add('bg-[#fff]');
+            dotsMinutes[m].classList.remove('activeOn');
+            dotsMinutes[m].classList.add('bg-[#fff]');
         }
     }
 
-    for (let s of secondsValues) {
-        countS++;
+    for (let s in secondsValues) {
+        if (seconds >= secondsValues[s] && s < secondsValues.length) {
+            dotsSeconds[s].classList.add('activeOn');
+            dotsSeconds[s].classList.remove('bg-[#fff]');
 
-        if (seconds >= s && countS < secondsValues.length) {
-            dotsSeconds[countS].classList.add('activeOn');
-            dotsSeconds[countS].classList.remove('bg-[#fff]');
-
-            seconds -= s;
+            seconds -= secondsValues[s];
         } else {
-            dotsSeconds[countS].classList.remove('activeOn');
-            dotsSeconds[countS].classList.add('bg-[#fff]');
+            dotsSeconds[s].classList.remove('activeOn');
+            dotsSeconds[s].classList.add('bg-[#fff]');
         }
     }
 }
